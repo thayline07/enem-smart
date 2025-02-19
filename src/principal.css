@@ -1,0 +1,142 @@
+:root {
+  --verde-agua: #16ffbb;
+  --azul-claro: #29ddda;
+  --azul: #37a7e7;
+  --azul-escuro: #091231;
+  --cinza: #e0e4e6;
+  --branco: #f0fcff;
+  --preto: #0a081b;
+  --titulo: "Poppins";
+  --texto: "Montserrat";
+}
+
+body {
+  background-image: url("./img/background-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: var(--texto);
+  overflow-x: hidden;
+}
+
+/* CABEÇALHO */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  align-items: center;
+}
+
+header > h3 {
+  color: var(--verde-agua);
+  margin-left: 2rem;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+header > ul {
+  display: flex;
+  gap: 4rem;
+}
+
+header > ul > li > a {
+  color: var(--preto);
+  font-weight: 500;
+}
+
+header > ul > li > a:hover {
+  color: var(--verde-agua);
+  text-shadow: 1px 1px 10px var(--verde-agua);
+}
+
+header > a {
+  margin-right: 4rem;
+  padding: 0.5rem 0.9rem;
+  color: var(--verde-agua);
+  border: var(--verde-agua) 1px solid;
+  border-radius: 15px;
+}
+
+header > a:hover {
+  color: var(--preto);
+  background-color: var(--verde-agua);
+  border: var(--verde-agua) solid 1px;
+}
+
+/* MAIN */
+
+main {
+  padding: 10rem 10rem 0rem 10rem;
+  height: 400px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: var(--branco);
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.001)
+  );
+}
+
+.titulo-principal {
+  color: var(--branco);
+  font-size: 46px;
+  font-weight: 700;
+}
+
+.titulo-principal > strong {
+  color: var(--verde-agua);
+  text-shadow: 1px 1px 10px var(--preto);
+}
+
+.texto-principal {
+  margin-top: 1.5rem;
+  text-align: justify;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2rem;
+  margin-right: 10rem;
+}
+
+.texto-principal > strong {
+  color: var(--verde-agua);
+  font-weight: 500;
+}
+
+.botoes-principais {
+  margin-top: 2.5rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.botoes-principais > a {
+  padding: 0.9rem;
+  background-color: var(--verde-agua);
+  border-radius: 25px;
+  color: var(--preto);
+  font-weight: 600;
+}
+
+.botoes-principais > a:hover {
+  cursor: pointer;
+  color: var(--verde-agua);
+  background-color: var(--preto);
+}
+
+/* SEÇÃO DOIS */
+
+.segunda-secao {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-segunda-secao {
+  padding: 0rem 10rem 22rem 10rem;
+}
+
+.titulo-secundario {
+  font-size: 44px;
+  font-weight: bolder;
+  justify-self: center;
+}
