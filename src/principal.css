@@ -12,7 +12,7 @@
 
 body {
   background-image: url("./img/background-desktop.jpg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   font-family: var(--texto);
   overflow-x: hidden;
@@ -127,16 +127,119 @@ main {
 /* SEÇÃO DOIS */
 
 .segunda-secao {
+  background-color: var(--verde-agua);
   display: flex;
   flex-direction: column;
+  background-image: linear-gradient(
+    to top,
+    rgb(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.001)
+  );
+  background-image: linear-gradient(
+    to bottom,
+    rgb(0, 0, 0, 1),
+    rgb(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.001)
+  );
 }
 
 .conteudo-segunda-secao {
-  padding: 0rem 10rem 22rem 10rem;
+  padding: 15rem 10rem 18rem 10rem;
 }
 
 .titulo-secundario {
   font-size: 44px;
   font-weight: bolder;
   justify-self: center;
+  color: var(--preto);
+  margin-bottom: 6rem;
+}
+
+.lista-segunda-secao {
+  display: flex;
+  justify-content: space-around;
+  color: var(--preto);
+}
+
+.titulo-informacao {
+  color: var(--preto);
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.lista-segunda-secao > li > p {
+  font-size: 16px;
+  font-weight: 300;
+  padding-right: 3rem;
+}
+
+/* TERCEIRA SEÇÃO */
+
+.terceira-secao {
+  color: var(--branco);
+}
+
+.titulo-terceira-secao {
+  font-size: 44px;
+  font-weight: bolder;
+  justify-self: center;
+  margin-bottom: 6rem;
+}
+
+.lista-terceira-sessao {
+  display: flex;
+  justify-content: space-around;
+  margin: 0rem 15rem;
+}
+
+.lista-terceira-sessao > li {
+  width: 14rem;
+  height: 8rem;
+  background-color: var(--preto);
+  border: 2px solid var(--verde-agua);
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.titulo-info {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.lista-terceira-sessao > li > p {
+  font-weight: 300;
+}
+
+/* QUARTA SEÇÃO */
+
+.quarta-secao {
+  margin: 20rem 0rem 10rem 0rem;
+  display: flex;
+}
+
+.imagem-quarta-secao {
+  margin-left: 20rem;
+}
+
+.quarta-secao > div {
+}
+
+.quarta-secao-titulo {
+}
+
+.quarta-secao > div > div {
+}
+
+.play {
+}
+
+.quarta-secao-subtitulo {
+}
+
+.quarta-secao-texto {
 }
