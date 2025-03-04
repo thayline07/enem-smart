@@ -1,0 +1,165 @@
+:root {
+  --verde-agua: #16ffbb;
+  --azul-claro: #29ddda;
+  --azul: #37a7e7;
+  --azul-escuro: #091231;
+  --cinza: #e0e4e6;
+  --branco: #f0fcff;
+  --preto: #0a081b;
+  --titulo: "Poppins";
+  --texto: "Montserrat";
+}
+
+/* CABEÇALHO */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 2rem;
+  align-items: center;
+  font-family: var(--texto);
+}
+
+header > h3 {
+  color: var(--verde-agua);
+  margin-left: 2rem;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+header > ul {
+  display: flex;
+  gap: 4rem;
+}
+
+header > ul > li > a {
+  color: var(--preto);
+  font-weight: 500;
+}
+
+header > ul > li > a:hover {
+  color: var(--verde-agua);
+  text-shadow: 1px 1px 10px var(--verde-agua);
+}
+
+header > a {
+  margin-right: 4rem;
+  padding: 0.5rem 0.9rem;
+  color: var(--verde-agua);
+  border: var(--verde-agua) 1px solid;
+  border-radius: 15px;
+}
+
+header > a:hover {
+  color: var(--preto);
+  background-color: var(--verde-agua);
+  border: var(--verde-agua) solid 1px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--texto);
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--preto);
+  background-image: url("./img/background-desktop.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  margin-top: 8rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text {
+  width: 45%;
+  color: var(--cinza);
+  margin-bottom: 3rem;
+}
+
+.text h1 {
+  font-size: 2.3em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.text h1 > strong {
+  color: var(--verde-agua);
+}
+
+.text p {
+  font-size: 1em;
+  line-height: 1.6;
+  font-weight: 300;
+  max-width: 500px;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  height: 16rem;
+  width: 14rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  margin-left: 5rem;
+  text-align: center;
+}
+
+.cadastro-box {
+  height: 18rem;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--branco);
+}
+
+.input-box {
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 13rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.input-box input::placeholder {
+  color: var(--branco);
+  font-family: var(--texto);
+}
+
+button {
+  width: 14rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--azul-claro);
+  color: var(--branco);
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.cadastrar {
+  font-size: 12px;
+  color: var(--cinza);
+  font-weight: 200;
+}
+
+.cadastrar > strong:hover {
+  color: var(--verde-agua);
+  font-weight: 400;
+  text-shadow: var(--verde-agua) 1px 1px 5px;
+}

@@ -16,6 +16,7 @@ body {
   background-repeat: no-repeat;
   font-family: var(--texto);
   overflow-x: hidden;
+  background-color: var(--preto);
 }
 
 /* CABEÇALHO */
@@ -127,14 +128,10 @@ main {
 /* SEÇÃO DOIS */
 
 .segunda-secao {
-  background-color: var(--verde-agua);
+  background-color: var(--preto);
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(
-    to top,
-    rgb(0, 0, 0, 1),
-    rgba(0, 0, 0, 0.001)
-  );
+  background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0.001));
   background-image: linear-gradient(
     to bottom,
     rgb(0, 0, 0, 1),
@@ -151,18 +148,18 @@ main {
   font-size: 44px;
   font-weight: bolder;
   justify-self: center;
-  color: var(--preto);
+  color: var(--branco);
   margin-bottom: 6rem;
 }
 
 .lista-segunda-secao {
   display: flex;
   justify-content: space-around;
-  color: var(--preto);
+  color: var(--branco);
 }
 
 .titulo-informacao {
-  color: var(--preto);
+  color: var(--azul-claro);
   font-weight: 600;
   font-size: 20px;
   margin-bottom: 0.5rem;
@@ -177,6 +174,7 @@ main {
 /* TERCEIRA SEÇÃO */
 
 .terceira-secao {
+  background-color: var(--preto);
   color: var(--branco);
 }
 
@@ -185,6 +183,10 @@ main {
   font-weight: bolder;
   justify-self: center;
   margin-bottom: 6rem;
+}
+
+.titulo-terceira-secao > strong {
+  color: var(--verde-agua);
 }
 
 .lista-terceira-sessao {
@@ -216,30 +218,67 @@ main {
 }
 
 /* QUARTA SEÇÃO */
-
 .quarta-secao {
-  margin: 20rem 0rem 10rem 0rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 900px;
+  margin: 15rem auto;
+  color: white;
 }
 
 .imagem-quarta-secao {
-  margin-left: 20rem;
+  width: 400px;
+  border-radius: 12px;
+  margin-right: 7rem;
 }
 
-.quarta-secao > div {
+.quarta-secao div {
+  flex: 1;
 }
 
 .quarta-secao-titulo {
+  font-size: 34px;
+  font-weight: bold;
+  margin-bottom: 3rem;
 }
 
-.quarta-secao > div > div {
+.quarta-secao div > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--azul-escuro);
+  padding: 1rem 1rem 1.5rem 1rem;
+  width: 200px;
+  border-radius: 8px;
 }
 
+.quarta-secao div > div > div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+/* Ícone Play */
 .play {
+  width: 20px;
+  height: 20px;
+  grid-area: play;
 }
 
+/* Subtítulo */
 .quarta-secao-subtitulo {
+  font-size: 18px;
+  color: #00ff99;
+
+  grid-area: titulo;
 }
 
+/* Texto */
 .quarta-secao-texto {
+  font-size: 14px;
+  max-width: 250px;
+  grid-area: texto;
 }
