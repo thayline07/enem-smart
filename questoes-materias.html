@@ -30,68 +30,73 @@
     </header>
 
     <main class="container">
-      <div class="materias">
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
+      <button class="slider-btn prev" onclick="moveSlider(-1)">&#10094;</button>
+      <div class="slider-container">
+        <div class="materias" id="materias">
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Matemática</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Português</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">História</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Geografia</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Biologia</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Química</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Física</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Inglês</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Arte</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
+          <div class="card">
+            <i class="ph ph-alien"></i>
+            <p class="card-nome">Educação Física</p>
+            <p class="card-numero">1000 QUESTÕES</p>
+          </div>
         </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
-        <div class="card">
-          <i class="ph ph-alien"></i>
-          <p class="card-nome">Matéria</p>
-          <p class="card-numero">1000 QUESTÕES</p>
-        </div>
+      </div>
+      <button class="slider-btn next" onclick="moveSlider(1)">&#10095;</button>
+      <hr />
+      <div class="pesquisar">
+        <input
+          type="text"
+          name="Pesquisar"
+          id="pesquisar"
+          placeholder="Pesquisar..."
+        />
+        <i class="ph ph-magnifying-glass"></i>
       </div>
     </main>
   </body>
+  <script src="./js/slider.js"></script>
 </html>
